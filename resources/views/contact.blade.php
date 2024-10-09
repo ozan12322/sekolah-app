@@ -33,7 +33,7 @@
                             </svg>
 
                             <span
-                                class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400"
+                                class="mx-2 text-gray-700 truncate w-72"
                             >
                                 Jl. Langon Sari No.6, Langonsari, Kec.
                                 Pameungpeuk, Kabupaten Bandung, Jawa Barat 40376
@@ -57,7 +57,7 @@
                             </svg>
 
                             <span
-                                class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400"
+                                class="mx-2 text-gray-700 truncate w-72"
                                 >(+62) xxx-xxxx-xxx</span
                             >
                         </p>
@@ -79,20 +79,20 @@
                             </svg>
 
                             <span
-                                class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400"
+                                class="mx-2 text-gray-700 truncate w-72"
                                 >acb@example.com</span
                             >
                         </p>
                     </div>
 
                     <div class="mt-6 w-80 md:mt-8">
-                        <h3 class="text-gray-600 dark:text-gray-300">
+                        <h3 class="text-gray-600">
                             Follow us
                         </h3>
 
                         <div class="flex mt-4 -mx-1.5">
                             <a
-                                class="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+                                class="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
                                 href="#"
                             >
                                 <svg
@@ -108,7 +108,7 @@
                             </a>
 
                             <a
-                                class="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+                                class="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
                                 href="#"
                             >
                                 <svg
@@ -133,7 +133,7 @@
                             </a>
 
                             <a
-                                class="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+                                class="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
                                 href="#"
                             >
                                 <svg
@@ -150,7 +150,7 @@
                             </a>
 
                             <a
-                                class="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+                                class="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
                                 href="#"
                             >
                                 <svg
@@ -171,7 +171,7 @@
 
                 <div class="mt-8 lg:w-1/2 lg:mx-6">
                     <div
-                        class="w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50"
+                        class="w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl lg:max-w-xl shadow-gray-300/50"
                     >
                         <h1 class="text-lg font-medium text-gray-700">
                             Apa yang ingin anda tanyakan ?
@@ -180,35 +180,35 @@
                         <form class="mt-6">
                             <div class="flex-1">
                                 <label
-                                    class="block mb-2 text-sm text-gray-600 dark:text-gray-200"
+                                    class="block mb-2 text-sm text-gray-600"
                                     >Full Name</label
                                 >
                                 <input
                                     type="text"
                                     placeholder="Nama Lengkap"
-                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                 />
                             </div>
 
                             <div class="flex-1 mt-6">
                                 <label
-                                    class="block mb-2 text-sm text-gray-600 dark:text-gray-200"
+                                    class="block mb-2 text-sm text-gray-600"
                                     >Email address</label
                                 >
                                 <input
                                     type="email"
                                     placeholder="abc@example.com"
-                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                 />
                             </div>
 
                             <div class="w-full mt-6">
                                 <label
-                                    class="block mb-2 text-sm text-gray-600 dark:text-gray-200"
+                                    class="block mb-2 text-sm text-gray-600"
                                     >Message</label
                                 >
                                 <textarea
-                                    class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                     placeholder="Pesan"
                                 ></textarea>
                             </div>

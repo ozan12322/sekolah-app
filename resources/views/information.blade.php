@@ -19,12 +19,12 @@
                     <div class="flex flex-col justify-between py-6 lg:mx-6">
                         <a
                             href="#"
-                            class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                            class="text-xl font-semibold text-gray-800 hover:underline"
                         >
                             How to use sticky note for problem solving
                         </a>
 
-                        <span class="text-sm text-gray-500 dark:text-gray-300"
+                        <span class="text-sm text-gray-500"
                             >On: 20 October 2019</span
                         >
                     </div>
@@ -40,12 +40,12 @@
                     <div class="flex flex-col justify-between py-6 lg:mx-6">
                         <a
                             href="#"
-                            class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                            class="text-xl font-semibold text-gray-800 hover:underline"
                         >
                             How to use sticky note for problem solving
                         </a>
 
-                        <span class="text-sm text-gray-500 dark:text-gray-300"
+                        <span class="text-sm text-gray-500"
                             >On: 20 October 2019</span
                         >
                     </div>
@@ -61,12 +61,12 @@
                     <div class="flex flex-col justify-between py-6 lg:mx-6">
                         <a
                             href="#"
-                            class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                            class="text-xl font-semibold text-gray-800 hover:underline"
                         >
                             Morning routine to boost your mood
                         </a>
 
-                        <span class="text-sm text-gray-500 dark:text-gray-300"
+                        <span class="text-sm text-gray-500"
                             >On: 25 November 2020</span
                         >
                     </div>
@@ -82,12 +82,12 @@
                     <div class="flex flex-col justify-between py-6 lg:mx-6">
                         <a
                             href="#"
-                            class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                            class="text-xl font-semibold text-gray-800 hover:underline"
                         >
                             All the features you want to know
                         </a>
 
-                        <span class="text-sm text-gray-500 dark:text-gray-300"
+                        <span class="text-sm text-gray-500"
                             >On: 30 September 2020</span
                         >
                     </div>
@@ -103,12 +103,12 @@
                     <div class="flex flex-col justify-between py-6 lg:mx-6">
                         <a
                             href="#"
-                            class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                            class="text-xl font-semibold text-gray-800 hover:underline"
                         >
                             Minimal workspace for your inspirations
                         </a>
 
-                        <span class="text-sm text-gray-500 dark:text-gray-300"
+                        <span class="text-sm text-gray-500"
                             >On: 13 October 2019</span
                         >
                     </div>
@@ -124,12 +124,12 @@
                     <div class="flex flex-col justify-between py-6 lg:mx-6">
                         <a
                             href="#"
-                            class="text-xl font-semibold text-gray-800 hover:underline dark:text-white"
+                            class="text-xl font-semibold text-gray-800 hover:underline"
                         >
                             What do you want to know about Blockchane
                         </a>
 
-                        <span class="text-sm text-gray-500 dark:text-gray-300"
+                        <span class="text-sm text-gray-500"
                             >On: 20 October 2019</span
                         >
                     </div>

@@ -1,5 +1,5 @@
 <!-- Footer -->
-    <footer class="bg-emerald-700 dark:bg-gray-900">
+    <footer class="bg-emerald-700">
         <div
             class="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row"
         >
@@ -9,14 +9,14 @@
                 >
             </a>
 
-            <p class="text-sm text-slate-300 dark:text-gray-300">
+            <p class="text-sm text-slate-300">
                 © Copyright 2024. All Rights Reserved.
             </p>
 
             <div class="flex -mx-2">
                 <a
                     href="#"
-                    class="mx-2 text-slate-300 transition-colors duration-300 dark:text-gray-300 hover:text-emerald-500 dark:hover:text-emerald-400"
+                    class="mx-2 text-slate-300 transition-colors duration-300 hover:text-emerald-500"
                     aria-label="Reddit"
                 >
                     <svg
@@ -39,7 +39,7 @@
 
                 <a
                     href="#"
-                    class="mx-2 text-slate-300 transition-colors duration-300 dark:text-gray-300 hover:text-emerald-300 dark:hover:text-emerald-400"
+                    class="mx-2 text-slate-300 transition-colors duration-300 hover:text-emerald-300"
                     aria-label="Facebook"
                 >
                     <svg
@@ -56,7 +56,7 @@
 
                 <a
                     href="#"
-                    class="mx-2 text-slate-300 transition-colors duration-300 dark:text-gray-300 hover:text-emerald-300 dark:hover:text-emerald-400"
+                    class="mx-2 text-slate-300 transition-colors duration-300 hover:text-emerald-300"
                     aria-label="Github"
                 >
                     <svg
