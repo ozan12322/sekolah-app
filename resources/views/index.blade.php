@@ -2,7 +2,7 @@
     <!-- Jumbotron -->
     <section
         class="bg-center bg-no-repeat bg-gray-700 bg-blend-multiply"
-        style="background-image: url('img/2.jpg')"
+        style="background-image: url('img/bn-sd.jpg')"
     >
         <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <h1
@@ -19,7 +19,7 @@
                 class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
             >
                 <a
-                    href="#kegiatan"
+                    href="#berita"
                     class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:ring-emerald-300"
                 >
                     Informasi Lanjut
@@ -30,22 +30,20 @@
     <!-- End Jumbotron -->
 
     <!-- Start Services -->
-    <section id="services" class="pt-16">
+    <section class="pt-16 pb-28 bg-emerald-100">
         <div class="container px-6 py-10 mx-auto items-center">
             <h1
                 class="text-2xl font-semibold text-center text-emerald-700 capitalize lg:text-3xl"
             >
-                Services
+                Seputar Sekolah
             </h1>
 
-            <p class="mt-4 text-center text-gray-400">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Nostrum quam voluptatibus
-            </p>
-            <div class="grid grid-cols-1 gap-4 pt-10 lg:grid-cols-3 lg:gap-8">
-                <div class="items-center mx-auto">
+            <hr class="w-64 h-1 mt-2 mx-auto bg-emerald-200 border-0 rounded" />
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
+                <div>
                     <svg
-                        class="w-32 h-32 text-gray-800"
+                        class="w-32 h-32 mx-auto text-gray-800"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -58,12 +56,12 @@
                         />
                     </svg>
                     <p class="font-medium text-center text-gray-500">
-                        Kurikulum Terbaru
+                        Kurikulum Inovatif
                     </p>
                 </div>
-                <div class="items-center mx-auto">
+                <div>
                     <svg
-                        class="w-32 h-32 text-gray-800"
+                        class="w-32 h-32 mx-auto text-gray-800"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -79,11 +77,13 @@
                             d="M5.395 15.055 4.07 19a1 1 0 0 0 1.264 1.267l1.95-.65 1.144 1.707A1 1 0 0 0 10.2 21.1l1.12-3.18a4.641 4.641 0 0 1-2.515-1.208 4.667 4.667 0 0 1-3.411-1.656Zm7.269 2.867 1.12 3.177a1 1 0 0 0 1.773.224l1.144-1.707 1.95.65A1 1 0 0 0 19.915 19l-1.32-3.93a4.667 4.667 0 0 1-3.4 1.642 4.643 4.643 0 0 1-2.53 1.21Z"
                         />
                     </svg>
-                    <p class="font-medium text-center text-gray-500">Guru Tersertifikasi</p>
+                    <p class="font-medium text-center text-gray-500">
+                        Pengajar Berkualitas
+                    </p>
                 </div>
-                <div class="items-center mx-auto">
+                <div>
                     <svg
-                        class="w-32 h-32 text-gray-800"
+                        class="w-32 h-32 mx-auto text-gray-800"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -96,7 +96,7 @@
                         />
                     </svg>
                     <p class="font-medium text-center text-gray-500">
-                        Fasilitas
+                        Fasilitas Lengkap
                     </p>
                 </div>
             </div>
@@ -104,14 +104,171 @@
     </section>
     <!-- End Services -->
 
+    <!-- Start Berita -->
+    <section class="pt-16 pb-28" id="berita">
+        <div class="container px-6 py-10 mx-auto">
+            <h1
+                class="text-2xl font-semibold text-emerald-700 capitalize lg:text-3xl text-center pb-2"
+            >
+                Berita
+            </h1>
+            <hr class="w-64 h-1 mx-auto bg-emerald-200 border-0 rounded" />
+
+            <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
+                <div class="lg:flex">
+                    <article class="flex bg-white transition shadow-xl">
+                        <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                            <time
+                                datetime="2022-10-10"
+                                class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+                            >
+                                <span>2022</span>
+                                <span class="w-px flex-1 bg-gray-900/10"></span>
+                                <span>Oct 10</span>
+                            </time>
+                        </div>
+
+                        <div class="hidden sm:block sm:basis-56">
+                            <img
+                                alt=""
+                                src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                                class="aspect-square h-full w-full object-cover"
+                            />
+                        </div>
+
+                        <div class="flex flex-1 flex-col justify-between">
+                            <div
+                                class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6"
+                            >
+                                <button
+                                    data-modal-target="default-modal"
+                                    data-modal-toggle="default-modal"
+                                >
+                                    <h3
+                                        class="font-bold uppercase text-gray-900"
+                                    >
+                                        Finding the right guitar for your style
+                                        - 5 tips
+                                    </h3>
+                                </button>
+
+                                <p
+                                    class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Recusandae dolores,
+                                    possimus pariatur animi temporibus nesciunt
+                                    praesentium dolore sed nulla ipsum eveniet
+                                    corporis quidem, mollitia itaque minus
+                                    soluta, voluptates neque explicabo tempora
+                                    nisi culpa eius atque dignissimos. Molestias
+                                    explicabo corporis voluptatem?
+                                </p>
+                            </div>
+
+                            <div class="sm:flex sm:items-end sm:justify-end">
+                                <button
+                                    data-modal-target="default-modal"
+                                    data-modal-toggle="default-modal"
+                                    class="block bg-emerald-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-emerald-400"
+                                >
+                                    Baca Berita
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Modal Berita -->
+                <x-modal-berita></x-modal-berita>
+
+                <div class="lg:flex">
+                    <article class="flex bg-white transition shadow-xl">
+                        <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                            <time
+                                datetime="2022-10-10"
+                                class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+                            >
+                                <span>2022</span>
+                                <span class="w-px flex-1 bg-gray-900/10"></span>
+                                <span>Oct 10</span>
+                            </time>
+                        </div>
+
+                        <div class="hidden sm:block sm:basis-56">
+                            <img
+                                alt=""
+                                src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                                class="aspect-square h-full w-full object-cover"
+                            />
+                        </div>
+
+                        <div class="flex flex-1 flex-col justify-between">
+                            <div
+                                class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6"
+                            >
+                                <button
+                                    data-modal-target="default-modal"
+                                    data-modal-toggle="default-modal"
+                                >
+                                    <h3
+                                        class="font-bold uppercase text-gray-900"
+                                    >
+                                        Finding the right guitar for your style
+                                        - 5 tips
+                                    </h3>
+                                </button>
+
+                                <p
+                                    class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Recusandae dolores,
+                                    possimus pariatur animi temporibus nesciunt
+                                    praesentium dolore sed nulla ipsum eveniet
+                                    corporis quidem, mollitia itaque minus
+                                    soluta, voluptates neque explicabo tempora
+                                    nisi culpa eius atque dignissimos. Molestias
+                                    explicabo corporis voluptatem?
+                                </p>
+                            </div>
+
+                            <div class="sm:flex sm:items-end sm:justify-end">
+                                <button
+                                    data-modal-target="default-modal"
+                                    data-modal-toggle="default-modal"
+                                    class="block bg-emerald-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-emerald-400"
+                                >
+                                    Baca Berita
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <a
+                    href="/information"
+                    class="hover:text-emerald-700 transition-colors duration-300"
+                >
+                    Lihat selengkapnya...
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Berita -->
+
     <!-- Start Info Kegiatan -->
-    <section class="bg-white pt-16 pb-28" id="kegiatan">
+    <section class="pt-16 pb-28 bg-emerald-100">
         <div class="container px-6 py-10 mx-auto">
             <h1
                 class="text-2xl font-semibold text-center text-emerald-700 capitalize lg:text-3xl"
             >
-                Info Kegiatan
+                Portfolio
             </h1>
+
+            <hr class="w-64 h-1 mt-2 mx-auto bg-emerald-200 border-0 rounded" />
 
             <p class="mt-4 text-center text-gray-400">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -134,7 +291,7 @@
                             Kegiatan Pramuka
                         </h2>
                         <p
-                            class="mt-2 text-lg tracking-wider text-blue-400 uppercase"
+                            class="mt-2 text-lg tracking-wider text-emerald-400 uppercase"
                         >
                             Keg
                         </p>
@@ -154,7 +311,7 @@
                             Pembagian Rapot
                         </h2>
                         <p
-                            class="mt-2 text-lg tracking-wider text-blue-400 uppercase"
+                            class="mt-2 text-lg tracking-wider text-emerald-400 uppercase"
                         >
                             Keg
                         </p>
@@ -174,7 +331,7 @@
                             Kultum
                         </h2>
                         <p
-                            class="mt-2 text-lg tracking-wider text-blue-400 uppercase"
+                            class="mt-2 text-lg tracking-wider text-emerald-400 uppercase"
                         >
                             Keg
                         </p>
