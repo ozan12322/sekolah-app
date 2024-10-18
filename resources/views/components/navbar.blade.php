@@ -18,7 +18,7 @@
             <div
                 class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
             >
-                @auth
+                <!-- @auth
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button
@@ -52,7 +52,7 @@
                             {{ __("Profile") }}
                         </x-dropdown-link>
 
-                        <!-- Authentication -->
+                        
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
 
@@ -75,7 +75,8 @@
                         Log In
                     </button>
                 </a>
-                @endauth
+                @endauth -->
+
                 <button
                     data-collapse-toggle="navbar-sticky"
                     type="button"
