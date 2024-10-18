@@ -316,8 +316,110 @@
     </section>
     <!-- End Berita -->
 
-    <!-- Start Info Kegiatan -->
+    <!-- Start Ekstra -->
     <section class="pt-16 pb-28 bg-emerald-100">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-3xl font-bold text-center text-emerald-700 pb-2">
+                Ekstrakurikuler
+            </h1>
+            <hr class="w-64 h-1 mx-auto bg-emerald-200 border-0 rounded" />
+            <div class="flex flex-wrap pt-10">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1
+                        class="text-xl font-bold text-emerald-600 md:text-xl lg:text-2xl text-center pb-2"
+                    >
+                        BTHQ
+                    </h1>
+                    <p
+                        class="font-medium text-slate-400 mb-10 leading-relaxed text-justify"
+                    >
+                        Baca Tulis Hafalan Quran (BTHQ) adalah kegiatan khusus
+                        yang dilakukan oleh SDN Sukasari 03 di luar jam
+                        pelajaran dalam rangka mendidik, membimbing dan melatih
+                        keterampilan membaca, menulis, menghafal dan memahami
+                        arti Al-Quran, khususnya bagi peserta didik yang belum
+                        memiliki kompetensi membaca dan menulis Al-Quran.
+                        Mengingat pentingnya pengajaran PAI, maka BTHQ dijadikan
+                        sebagai ekstrakurikuler wajib.
+                    </p>
+                </div>
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <div class="mt-10 relative lg:mt-9 lg:right-0">
+                        <img
+                            src="img/bg-sd.png"
+                            alt=""
+                            class="max-w-full mx-auto rounded-xl"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap pt-10">
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="mt-10 relative lg:mt-9 lg:right-0">
+                        <img
+                            src="img/bg-sd.png"
+                            alt=""
+                            class="max-w-full mx-auto rounded-xl"
+                        />
+                    </div>
+                </div>
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1
+                        class="text-xl font-bold text-emerald-600 md:text-xl lg:text-2xl text-center pb-2"
+                    >
+                        Literasi Sugema
+                    </h1>
+                    <p
+                        class="font-medium text-slate-400 mb-10 leading-relaxed text-justify"
+                    >
+                        Literasi tidak sekedar membaca dan menulis, namun
+                        mencakup keterampilan berpikir menggunakan sumber-sumber
+                        pengetahuan dalam bentuk cetak, visul, digital, dan
+                        auditori. Literasi merupakan keterampilan penting dalam
+                        hidup. Sebagian besar proses pendidikan bergantung pada
+                        kemampuan dan kesadaran literasi. Gerakan Literasi
+                        Sekolah (GLS) adalah sebuah upaya yang dilakukan secara
+                        menyeluruh dan berkelanjutan untuk menjadikan sekolah
+                        sebagai organisasi pembelajaran yang warganya literat
+                        sepanjang hayat melalui pelibatan publik.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap pt-10">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1
+                        class="text-xl font-bold text-emerald-600 md:text-xl lg:text-2xl text-center"
+                    >
+                        UKS
+                    </h1>
+                    <p
+                        class="font-medium text-slate-400 mb-10 leading-relaxed text-justify"
+                    >
+                        Tujuan UKS ialah memupuk kebiasaan hidup bersih dan
+                        sehat, mempertinggi nilai kesehatan, mencegah dan
+                        mengobati penyakit, rehabilitas anak-anak sekolah dan
+                        lingkungannya sehingga dapat memberi kesempatan tumbuh
+                        dan belajar secara harmonis, efesien, dan optimal.
+                    </p>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="mt-10 relative lg:mt-9 lg:right-0">
+                        <img
+                            src="img/bg-sd.png"
+                            alt=""
+                            class="max-w-full mx-auto rounded-xl"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Ekstra -->
+
+    <!-- Start Portfolio -->
+    <section class="pt-16 pb-28">
         <div class="container px-6 py-10 mx-auto">
             <h1
                 class="text-2xl font-semibold text-center text-emerald-700 capitalize lg:text-3xl"
@@ -337,7 +439,7 @@
             >
                 <div
                     class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-                    style="background-image: url('img/1.jpg')"
+                    style="background-image: url('img/kegiatan/pramuka.jpg')"
                 >
                     <div
                         class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100"
@@ -357,7 +459,9 @@
 
                 <div
                     class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-                    style="background-image: url('img/2.jpg')"
+                    style="
+                        background-image: url('img/kegiatan/pembagian-rapor.jpg');
+                    "
                 >
                     <div
                         class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100"
@@ -377,7 +481,7 @@
 
                 <div
                     class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-                    style="background-image: url('img/3.jpg')"
+                    style="background-image: url('img/kegiatan/kultum.jpg')"
                 >
                     <div
                         class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100"
@@ -395,7 +499,15 @@
                     </div>
                 </div>
             </div>
+            <div class="mt-10 text-center">
+                <a
+                    href="/galeri"
+                    class="hover:text-emerald-700 transition-colors duration-300"
+                >
+                    Lihat lebih banyak...
+                </a>
+            </div>
         </div>
     </section>
-    <!-- End Info Kegiatan -->
+    <!-- End Portfolio -->
 </x-layout>

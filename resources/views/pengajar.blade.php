@@ -26,16 +26,12 @@
                                 Dida Rohida CH, SP.d
                             </p>
 
-                            <div class="mt-32">
+                            <div class="mt-56">
                                 <div
                                     class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
                                 >
-                                    <p class="text-sm text-white">
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Omnis perferendis hic
-                                        asperiores quibusdam quidem voluptates
-                                        doloremque reiciendis nostrum harum.
-                                        Repudiandae?
+                                    <p class="text-sm text-white text-center">
+                                        Guru Kelas 1
                                     </p>
                                 </div>
                             </div>
@@ -62,16 +58,12 @@
                                 Dida Rohida CH, SP.d
                             </p>
 
-                            <div class="mt-32">
+                            <div class="mt-56">
                                 <div
                                     class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
                                 >
-                                    <p class="text-sm text-white">
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Omnis perferendis hic
-                                        asperiores quibusdam quidem voluptates
-                                        doloremque reiciendis nostrum harum.
-                                        Repudiandae?
+                                    <p class="text-sm text-white text-center">
+                                        Guru Kelas 2
                                     </p>
                                 </div>
                             </div>
@@ -98,16 +90,12 @@
                                 Dida Rohida CH, SP.d
                             </p>
 
-                            <div class="mt-32">
+                            <div class="mt-56">
                                 <div
                                     class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
                                 >
-                                    <p class="text-sm text-white">
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Omnis perferendis hic
-                                        asperiores quibusdam quidem voluptates
-                                        doloremque reiciendis nostrum harum.
-                                        Repudiandae?
+                                    <p class="text-sm text-white text-center">
+                                        Guru Kelas 3
                                     </p>
                                 </div>
                             </div>
@@ -134,16 +122,12 @@
                                 Dida Rohida CH, SP.d
                             </p>
 
-                            <div class="mt-32">
+                            <div class="mt-56">
                                 <div
                                     class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
                                 >
-                                    <p class="text-sm text-white">
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Omnis perferendis hic
-                                        asperiores quibusdam quidem voluptates
-                                        doloremque reiciendis nostrum harum.
-                                        Repudiandae?
+                                    <p class="text-sm text-white text-center">
+                                        Guru Kelas 4
                                     </p>
                                 </div>
                             </div>

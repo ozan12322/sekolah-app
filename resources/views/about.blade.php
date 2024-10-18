@@ -19,12 +19,6 @@
                         Modi unde aut dolores id placeat praesentium fugiat
                         iure.
                     </p>
-
-                    <a
-                        href="#"
-                        class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-cyan-800 transition duration-300 ease-in-out"
-                        >Contact Me!</a
-                    >
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="mt-10 relative lg:mt-9 lg:right-0">

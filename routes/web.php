@@ -24,6 +24,10 @@ Route::get('/tenaga-pengajar', function () {
     return view('pengajar');
 });
 
+Route::get('/galeri', function () {
+    return view('galeri');
+});
+
 Route::get('/information', [HomeController::class, 'information'])->name('information');
 
 Route::get('/contact', function () {
