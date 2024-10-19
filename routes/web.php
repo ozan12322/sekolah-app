@@ -43,8 +43,10 @@ Route::middleware('auth')->group(function () {
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
     Route::get('/dashboard/tambah-berita', [AdminController::class, 'tambah'])->name('admin.tambah');
-    Route::post('/dashboard/submit', [AdminController::class, 'submit'])->name('admin.submit');
-    Route::get('/dashboard/edit-berita/{id}', [AdminController::class, 'edit'])->name('admin.edit');
+    Route::post('/dashboard/store', [AdminController::class, 'store'])->name('admin.store');
+    Route::get('/dashboard/edit-berita{id}', [AdminController::class, 'edit'])->name('admin.edit');
+    Route::put('/dashboard/update-berita{id}', [AdminController::class, 'update'])->name('admin.update');
+    Route::delete('/dashboard/delete-berita{id}', [AdminController::class, 'destroy'])->name('admin.destroy');
 });
 
 require __DIR__.'/auth.php';

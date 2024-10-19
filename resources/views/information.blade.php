@@ -9,7 +9,7 @@
             <hr class="w-64 h-1 mx-auto bg-emerald-200 border-0 rounded" />
 
             <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
-                @foreach($berita as $data)
+                @foreach ($berita as $data)
                 <div class="lg:flex">
                     <article class="flex bg-white transition shadow-xl">
                         <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
@@ -17,13 +17,19 @@
                                 class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
                             >
                                 <span>{{ $data->date }}</span>
+                                <span class="w-px flex-1 bg-gray-900/10"></span>
+                                {{--
+                                <span>{{ $data->date->format('F j') }}</span>
+                                --}}
                             </time>
                         </div>
 
                         <div class="hidden sm:block sm:basis-56">
                             <img
                                 alt=""
-                                src="{{ $data->thumbnail }}"
+                                src="{{
+                                    url('img/berita')
+                                }}/{{ $data->thumbnail }}"
                                 class="aspect-square h-full w-full object-cover"
                             />
                         </div>
@@ -32,16 +38,9 @@
                             <div
                                 class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6"
                             >
-                                <button
-                                    data-modal-target="default-modal"
-                                    data-modal-toggle="default-modal"
-                                >
-                                    <h3
-                                        class="font-bold uppercase text-gray-900"
-                                    >
-                                        {{ $data->judul }}
-                                    </h3>
-                                </button>
+                                <h3 class="font-bold uppercase text-gray-900">
+                                    {{ $data->judul }}
+                                </h3>
 
                                 <p
                                     class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700"
@@ -50,86 +49,93 @@
                                 </p>
                             </div>
 
-                            <div class="sm:flex sm:items-end sm:justify-end">
+                            <div
+                                x-data="{ isOpen: false}"
+                                class="sm:flex sm:items-end sm:justify-end"
+                            >
                                 <button
-                                    data-modal-target="default-modal"
-                                    data-modal-toggle="default-modal"
+                                    @click="isOpen = true"
                                     class="block bg-emerald-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-emerald-400"
                                 >
-                                    Baca Berita
+                                    Buka Berita
                                 </button>
+
+                                <div
+                                    x-show="isOpen"
+                                    x-transition:enter="transition duration-300 ease-out"
+                                    x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                    x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
+                                    x-transition:leave="transition duration-150 ease-in"
+                                    x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
+                                    x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                    class="fixed inset-0 z-10 overflow-y-auto"
+                                    aria-labelledby="modal-title"
+                                    role="dialog"
+                                    aria-modal="true"
+                                >
+                                    <div
+                                        class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+                                    >
+                                        <span
+                                            class="hidden sm:inline-block sm:align-middle sm:h-screen"
+                                            aria-hidden="true"
+                                            >&#8203;</span
+                                        >
+
+                                        <div
+                                            class="relative inline-block p-4 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl sm:max-w-sm rounded-xl dark:bg-gray-900 sm:my-8 sm:w-full sm:p-6"
+                                        >
+                                            <div
+                                                class="flex items-center justify-center mx-auto"
+                                            >
+                                                @empty($data->thumbnail)
+                                                <img
+                                                    src="{{
+                                                        url('img/berita/')
+                                                    }}"
+                                                    class="h-full rounded-lg"
+                                                />
+                                                @else
+                                                <img
+                                                    src="{{
+                                                        url('img/berita')
+                                                    }}/{{ $data->thumbnail }}"
+                                                    class="h-full rounded-lg"
+                                                />
+                                                @endempty
+                                            </div>
+
+                                            <div class="mt-5 text-center">
+                                                <h3
+                                                    class="text-lg font-medium text-gray-800 dark:text-white"
+                                                    id="modal-title"
+                                                >
+                                                    {{ $data->judul }}
+                                                </h3>
+
+                                                <p
+                                                    class="mt-2 text-gray-500 dark:text-gray-400"
+                                                >
+                                                    {{ $data->desc }}
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="mt-4 sm:flex sm:items-center sm:justify-between sm:mt-6 sm:-mx-2"
+                                            >
+                                                <button
+                                                    @click="isOpen = false"
+                                                    class="px-4 sm:mx-2 w-full py-2.5 text-sm font-medium dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40"
+                                                >
+                                                    Tutup
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </article>
-                </div>
-
-                <!-- Modal Berita -->
-                <div
-                    id="default-modal"
-                    tabindex="-1"
-                    aria-hidden="true"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full shadow-lg"
-                >
-                    <div class="relative p-4 w-full max-w-2xl max-h-full">
-                        <!-- Modal content -->
-                        <div
-                            class="relative bg-white rounded-lg shadow dark:bg-gray-700"
-                        >
-                            <!-- Modal header -->
-                            <div
-                                class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
-                            >
-                                {{ $data->judul }}
-                                <button
-                                    type="button"
-                                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                                    data-modal-hide="default-modal"
-                                >
-                                    <svg
-                                        class="w-3 h-3"
-                                        aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 14 14"
-                                    >
-                                        <path
-                                            stroke="currentColor"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                                        />
-                                    </svg>
-                                    <span class="sr-only">Close modal</span>
-                                </button>
-                            </div>
-                            <!-- Modal body -->
-                            <div class="p-4 md:p-5 space-y-4">
-                                <img
-                                    class="object-cover w-full h-56 rounded-lg lg:w-64 mx-auto"
-                                    src="{{ $data->thumbnail }}"
-                                    alt=""
-                                />
-                                <p
-                                    class="text-base leading-relaxed text-gray-500"
-                                >
-                                    {{ $data->desc }}
-                                </p>
-                            </div>
-                            <!-- Modal footer -->
-                            <div
-                                class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b"
-                            >
-                                <button
-                                    data-modal-hide="default-modal"
-                                    type="button"
-                                    class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-emerald-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-                                >
-                                    Tutup
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 @endforeach
             </div>

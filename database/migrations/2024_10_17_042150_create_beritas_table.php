@@ -14,11 +14,10 @@ return new class extends Migration
         Schema::create('beritas', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
-            $table->text('desc');
             $table->date('date');
+            $table->text('desc');
             $table->string('thumbnail')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

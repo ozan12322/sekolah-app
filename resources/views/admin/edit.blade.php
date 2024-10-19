@@ -10,10 +10,11 @@
             <div class="overflow-x-auto">
                 <form
                     class="max-w-sm mx-auto"
-                    action="{{ route('admin.submit') }}"
-                    method="post"
+                    action="{{ route('admin.update', $id->id) }}"
+                    method="POST"
+                    enctype="multipart/form-data"
                 >
-                    @csrf
+                    @csrf @method('put')
                     <div class="mb-5">
                         <label
                             for="judul"
@@ -24,9 +25,23 @@
                             type="text"
                             name="judul"
                             id="judul"
-                            value="{{ $berita->judul }}"
+                            value="{{ $id->judul }}"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-500 focus:border-emerald-500 block w-full p-2.5"
-                            required
+                        />
+                    </div>
+
+                    <div class="mb-5">
+                        <label
+                            for="judul"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >Tanggal Berita</label
+                        >
+                        <input
+                            type="date"
+                            name="date"
+                            id="date"
+                            value="{{ $id->date }}"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-500 focus:border-emerald-500 block w-full p-2.5"
                         />
                     </div>
 
@@ -39,7 +54,7 @@
                         <textarea
                             name="desc"
                             id="desc"
-                            value="{{ $berita->desc }}"
+                            value="{{ $id->desc }}"
                             rows="4"
                             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500"
                         ></textarea>
@@ -56,8 +71,8 @@
                             aria-describedby="user_avatar_help"
                             name="thumbnail"
                             id="thumbnail"
-                            value="{{ $berita->thumbnail }}"
-                            type="text"
+                            value="{{ $id->thumbnail }}"
+                            type="file"
                         />
                         <div
                             class="mt-1 text-sm text-gray-500 dark:text-gray-300"
