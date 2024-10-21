@@ -31,7 +31,7 @@
 
     <!-- Start Services -->
     <section class="pt-16 pb-28 bg-emerald-100">
-        <div class="container px-6 py-10 mx-auto items-center">
+        <div class="container px-6 py-10 mx-auto items-center view">
             <h1
                 class="text-2xl font-semibold text-center text-emerald-700 capitalize lg:text-3xl"
             >
@@ -41,7 +41,7 @@
             <hr class="w-64 h-1 mt-2 mx-auto bg-emerald-200 border-0 rounded" />
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
-                <div>
+                <div class="animate">
                     <svg
                         class="w-32 h-32 mx-auto text-gray-800"
                         aria-hidden="true"
@@ -59,7 +59,7 @@
                         Kurikulum Inovatif
                     </p>
                 </div>
-                <div>
+                <div class="animate">
                     <svg
                         class="w-32 h-32 mx-auto text-gray-800"
                         aria-hidden="true"
@@ -81,7 +81,7 @@
                         Pengajar Berkualitas
                     </p>
                 </div>
-                <div>
+                <div class="animate">
                     <svg
                         class="w-32 h-32 mx-auto text-gray-800"
                         aria-hidden="true"
@@ -260,12 +260,12 @@
 
     <!-- Start Ekstra -->
     <section class="pt-16 pb-28 bg-emerald-100">
-        <div class="container px-6 py-10 mx-auto">
+        <div class="container px-6 py-10 mx-auto view">
             <h1 class="text-3xl font-bold text-center text-emerald-700 pb-2">
                 Ekstrakurikuler
             </h1>
             <hr class="w-64 h-1 mx-auto bg-emerald-200 border-0 rounded" />
-            <div class="flex flex-wrap pt-10">
+            <div class="flex flex-wrap pt-10 animate">
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1
                         class="text-xl font-bold text-emerald-600 md:text-xl lg:text-2xl text-center pb-2"
@@ -296,7 +296,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-wrap pt-10">
+            <div class="flex flex-wrap pt-10 animate">
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="mt-10 relative lg:mt-9 lg:right-0">
                         <img
@@ -329,7 +329,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-wrap pt-10">
+            <div class="flex flex-wrap pt-10 animate">
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1
                         class="text-xl font-bold text-emerald-600 md:text-xl lg:text-2xl text-center"
@@ -362,7 +362,7 @@
 
     <!-- Start Portfolio -->
     <section class="pt-16 pb-28">
-        <div class="container px-6 py-10 mx-auto">
+        <div class="container px-6 py-10 mx-auto view">
             <h1
                 class="text-2xl font-semibold text-center text-emerald-700 capitalize lg:text-3xl"
             >
@@ -380,7 +380,7 @@
                 class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3"
             >
                 <div
-                    class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+                    class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group animate"
                     style="background-image: url('img/kegiatan/pramuka.jpg')"
                 >
                     <div
@@ -400,7 +400,7 @@
                 </div>
 
                 <div
-                    class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+                    class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group animate"
                     style="
                         background-image: url('img/kegiatan/pembagian-rapor.jpg');
                     "
@@ -422,7 +422,7 @@
                 </div>
 
                 <div
-                    class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+                    class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group animate"
                     style="background-image: url('img/kegiatan/kultum.jpg')"
                 >
                     <div

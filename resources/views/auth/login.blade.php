@@ -1,7 +1,7 @@
 <x-guest-layout>
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
         <div>
-            <p class="font-semibold text-2xl text-center text-gray-700">Login</p>
+            <p class="font-semibold text-2xl text-center text-gray-700">Login Admin</p>
             <p class="font-bold text-3xl text-center text-emerald-700">
                 SDN<span class="font-bold text-3xl text-emerald-500">Sukasari03</span>
             </p>
