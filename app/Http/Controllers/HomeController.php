@@ -18,7 +18,7 @@ class HomeController extends Controller
     function information(){
         $berita = Berita::get();
         return view('information', compact('berita'), [
-            'beritas' => DB::table('beritas')->paginate(6)
+            'beritas' => DB::table('beritas')->paginate(4)
         ]);
     }
 }

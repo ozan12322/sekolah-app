@@ -1,10 +1,4 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __("Dashboard") }}
-        </h2>
-    </x-slot>
-
+<x-admin>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="overflow-x-auto">
@@ -18,6 +12,11 @@
                     >
                         <thead class="ltr:text-left rtl:text-right">
                             <tr>
+                                <th
+                                    class="whitespace-nowrap px-4 py-2 font-medium text-gray-900"
+                                >
+                                    No.
+                                </th>
                                 <th
                                     class="whitespace-nowrap px-4 py-2 font-medium text-gray-900"
                                 >
@@ -45,6 +44,11 @@
                                 <td
                                     class="whitespace-nowrap px-4 py-2 font-medium text-gray-900"
                                 >
+                                    {{ $data->id }}
+                                </td>
+                                <td
+                                    class="whitespace-nowrap px-4 py-2 font-medium text-gray-900"
+                                >
                                     {{ $data->judul }}
                                 </td>
                                 <td
@@ -55,7 +59,11 @@
                                 <td
                                     class="whitespace-nowrap px-4 py-2 text-gray-700"
                                 >
-                                    {{ $data->desc }}
+                                    <p
+                                        class="truncate text-justify text-balance"
+                                    >
+                                        {{ $data->desc }}
+                                    </p>
                                 </td>
 
                                 <td class="whitespace-nowrap px-4 py-2">
@@ -115,7 +123,7 @@
                                                                     'img/berita/'
                                                                 )
                                                             }}"
-                                                            class="w-32 h-32 mx-auto"
+                                                            class="w-32 mx-auto"
                                                         />
                                                         @else
                                                         <img
@@ -124,11 +132,11 @@
                                                                     'img/berita'
                                                                 )
                                                             }}/{{ $data->thumbnail }}"
-                                                            class="w-32 h-32 mx-auto"
+                                                            class="w-32 mx-auto"
                                                         />
                                                         @endempty
                                                         <p
-                                                            class="mt-2 text-gray-500 dark:text-gray-400"
+                                                            class="mt-2 text-gray-500 dark:text-gray-400 text-balance text-justify"
                                                         >
                                                             {{ $data->desc }}
                                                         </p>
@@ -253,4 +261,4 @@
             </div>
         </div>
     </div>
-</x-app-layout>
+</x-admin>

@@ -74,7 +74,7 @@
                                     aria-modal="true"
                                 >
                                     <div
-                                        class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+                                        class="flex items-end justify-center min-h-screen max-w-full px-4 pt-4 pb-20 text-center sm:block sm:p-0"
                                     >
                                         <span
                                             class="hidden sm:inline-block sm:align-middle sm:h-screen"
@@ -83,7 +83,7 @@
                                         >
 
                                         <div
-                                            class="relative inline-block p-4 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl sm:max-w-sm rounded-xl dark:bg-gray-900 sm:my-8 sm:w-full sm:p-6"
+                                            class="relative inline-block p-4 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl sm:max-w-screen-lg rounded-xl dark:bg-gray-900 sm:my-8 sm:w-full sm:p-6"
                                         >
                                             <div
                                                 class="flex items-center justify-center mx-auto"
@@ -93,14 +93,14 @@
                                                     src="{{
                                                         url('img/berita/')
                                                     }}"
-                                                    class="h-full rounded-lg"
+                                                    class="w-80 rounded-lg"
                                                 />
                                                 @else
                                                 <img
                                                     src="{{
                                                         url('img/berita')
                                                     }}/{{ $data->thumbnail }}"
-                                                    class="h-full rounded-lg"
+                                                    class="w-80 rounded-lg"
                                                 />
                                                 @endempty
                                             </div>
@@ -114,7 +114,7 @@
                                                 </h3>
 
                                                 <p
-                                                    class="mt-2 text-gray-500 dark:text-gray-400"
+                                                    class="mt-2 text-gray-500 dark:text-gray-400 text-justify"
                                                 >
                                                     {{ $data->desc }}
                                                 </p>
@@ -141,9 +141,7 @@
             </div>
 
             {{-- Pagination --}}
-            <div class="mt-10 flex justify-center">
-                {{ $beritas->links() }}
-            </div>
+            {{ $beritas->links() }}
         </div>
     </section>
 </x-layout>

@@ -14,14 +14,14 @@
         </a>
 
         <p class="text-sm text-slate-300">
-            © Copyright 2024. All Rights Reserved.
+            © Copyright 2024. All Rights Reserved. | <a href="https://lordicon.com/" class="hover:text-blue-400">Icons by lordicon.com</a>
         </p>
 
         <div class="flex -mx-2">
             <a
-                href="#"
+                href="https://www.instagram.com/sdn.sukasari03/"
                 class="mx-2 text-slate-300 transition-colors duration-300 hover:text-emerald-500"
-                aria-label="Reddit"
+                aria-label="Instagram"
             >
                 <svg
                     class="w-5 h-5 fill-current"
@@ -42,7 +42,7 @@
             </a>
 
             <a
-                href="#"
+                href="https://www.facebook.com/groups/320445688962291?locale=id_ID"
                 class="mx-2 text-slate-300 transition-colors duration-300 hover:text-emerald-300"
                 aria-label="Facebook"
             >

@@ -1,5 +1,5 @@
 <x-layout>
-    <section class="pt-16 pb-28">
+    <section class="pt-16 pb-64">
         <div class="container px-6 py-10 mx-auto">
             <h1 class="text-3xl font-bold text-center text-emerald-700 pb-2">
                 Struktur Organisasi Sekolah
@@ -8,7 +8,7 @@
             <div class="flex flex-wrap pt-10">
                 <div class="w-full self-center px-4">
                     <img
-                        src="img/strukOr.png"
+                        src="img/strukOrg.png"
                         alt="Struktur Organisasi"
                         class="w-full"
                     />
